@@ -62,7 +62,7 @@ namespace StyleCop.Analyzers.LayoutRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(IfStatementAction, SyntaxKind.IfStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(IfStatementAction, SyntaxKind.IfStatement);
         }
 
         private static void HandleIfStatement(SyntaxNodeAnalysisContext context)

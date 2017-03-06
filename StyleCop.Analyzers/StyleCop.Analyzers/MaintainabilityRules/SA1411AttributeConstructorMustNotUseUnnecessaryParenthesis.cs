@@ -55,7 +55,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(AttributeArgumentListAction, SyntaxKind.AttributeArgumentList);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(AttributeArgumentListAction, SyntaxKind.AttributeArgumentList);
         }
 
         private static void HandleAttributeArgumentList(SyntaxNodeAnalysisContext context)

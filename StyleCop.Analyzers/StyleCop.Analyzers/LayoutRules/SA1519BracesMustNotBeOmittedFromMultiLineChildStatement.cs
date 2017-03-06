@@ -61,12 +61,12 @@ namespace StyleCop.Analyzers.LayoutRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(IfStatementAction, SyntaxKind.IfStatement);
-            context.RegisterSyntaxNodeAction(DoStatementAction, SyntaxKind.DoStatement);
-            context.RegisterSyntaxNodeAction(WhileStatementAction, SyntaxKind.WhileStatement);
-            context.RegisterSyntaxNodeAction(ForStatementAction, SyntaxKind.ForStatement);
-            context.RegisterSyntaxNodeAction(ForEachStatementAction, SyntaxKind.ForEachStatement);
-            context.RegisterSyntaxNodeAction(UsingStatementAction, SyntaxKind.UsingStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(IfStatementAction, SyntaxKind.IfStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(DoStatementAction, SyntaxKind.DoStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(WhileStatementAction, SyntaxKind.WhileStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ForStatementAction, SyntaxKind.ForStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ForEachStatementAction, SyntaxKind.ForEachStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(UsingStatementAction, SyntaxKind.UsingStatement);
         }
 
         private static void HandleIfStatement(SyntaxNodeAnalysisContext context)

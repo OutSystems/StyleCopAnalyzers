@@ -47,7 +47,7 @@ namespace StyleCop.Analyzers.SpecialRules
         private static void HandleCompilationStart(CompilationStartAnalysisContext context)
         {
             Analyzer analyzer = new Analyzer();
-            context.RegisterSyntaxTreeAction(analyzer.HandleSyntaxTree);
+            context.RegisterSyntaxTreeActionWithExclusionsVerification(analyzer.HandleSyntaxTree);
             context.RegisterCompilationEndAction(analyzer.HandleCompilation);
         }
 

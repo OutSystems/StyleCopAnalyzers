@@ -38,7 +38,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(ThisExpressionAction, SyntaxKind.ThisExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ThisExpressionAction, SyntaxKind.ThisExpression);
         }
 
         private static void HandleThisExpression(SyntaxNodeAnalysisContext context)

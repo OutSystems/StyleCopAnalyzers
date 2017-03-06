@@ -65,8 +65,8 @@ namespace StyleCop.Analyzers.OrderingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(PropertyDeclarationAction, SyntaxKind.PropertyDeclaration);
-            context.RegisterSyntaxNodeAction(IndexerDeclarationAction, SyntaxKind.IndexerDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(PropertyDeclarationAction, SyntaxKind.PropertyDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(IndexerDeclarationAction, SyntaxKind.IndexerDeclaration);
         }
 
         private static void HandleIndexerDeclaration(SyntaxNodeAnalysisContext context)

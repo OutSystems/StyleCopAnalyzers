@@ -73,7 +73,7 @@ namespace StyleCop.Analyzers.DocumentationRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(SingleLineDocumentationTriviaAction, SyntaxKind.SingleLineDocumentationCommentTrivia);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(SingleLineDocumentationTriviaAction, SyntaxKind.SingleLineDocumentationCommentTrivia);
         }
 
         private static void HandleSingleLineDocumentationTrivia(SyntaxNodeAnalysisContext context)

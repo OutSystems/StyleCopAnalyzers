@@ -91,8 +91,8 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(BlockAction, SyntaxKind.Block);
-            context.RegisterSyntaxNodeAction(SwitchStatementAction, SyntaxKind.SwitchStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BlockAction, SyntaxKind.Block);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(SwitchStatementAction, SyntaxKind.SwitchStatement);
         }
 
         private static void HandleSwitchStatement(SyntaxNodeAnalysisContext context)

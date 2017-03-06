@@ -38,8 +38,8 @@ namespace StyleCop.Analyzers.DocumentationRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(this.typeDeclarationAction, SyntaxKinds.TypeDeclaration);
-            context.RegisterSyntaxNodeAction(this.methodDeclarationAction, SyntaxKind.MethodDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.typeDeclarationAction, SyntaxKinds.TypeDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.methodDeclarationAction, SyntaxKind.MethodDeclaration);
         }
 
         /// <summary>

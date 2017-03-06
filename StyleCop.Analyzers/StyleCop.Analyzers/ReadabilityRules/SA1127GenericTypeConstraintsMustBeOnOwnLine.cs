@@ -45,7 +45,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(TypeParameterConstraintClauseAction, SyntaxKind.TypeParameterConstraintClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(TypeParameterConstraintClauseAction, SyntaxKind.TypeParameterConstraintClause);
         }
 
         private static void HandleTypeParameterConstraintClause(SyntaxNodeAnalysisContext context)

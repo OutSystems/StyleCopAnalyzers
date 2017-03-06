@@ -64,7 +64,7 @@ namespace StyleCop.Analyzers.OrderingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(EventDeclarationAction, SyntaxKind.EventDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(EventDeclarationAction, SyntaxKind.EventDeclaration);
         }
 
         private static void HandleEventDeclaration(SyntaxNodeAnalysisContext context)

@@ -76,7 +76,7 @@ namespace StyleCop.Analyzers.DocumentationRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(DestructorDeclarationAction, SyntaxKind.DestructorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(DestructorDeclarationAction, SyntaxKind.DestructorDeclaration);
         }
 
         private static void HandleDestructor(SyntaxNodeAnalysisContext context)

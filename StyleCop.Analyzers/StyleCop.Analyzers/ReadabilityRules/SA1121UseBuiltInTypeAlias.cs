@@ -151,7 +151,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
         private static void HandleCompilationStart(CompilationStartAnalysisContext context)
         {
             Analyzer analyzer = new Analyzer(context.Compilation.GetOrCreateUsingAliasCache());
-            context.RegisterSyntaxNodeAction(analyzer.HandleIdentifierNameSyntax, SyntaxKind.IdentifierName);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(analyzer.HandleIdentifierNameSyntax, SyntaxKind.IdentifierName);
         }
 
         private sealed class Analyzer

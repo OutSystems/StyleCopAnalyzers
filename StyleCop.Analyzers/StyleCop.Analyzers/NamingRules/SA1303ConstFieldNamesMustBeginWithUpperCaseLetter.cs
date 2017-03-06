@@ -52,7 +52,7 @@ namespace StyleCop.Analyzers.NamingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSymbolAction(Analyzer.HandleFieldDeclaration, SymbolKind.Field);
+            context.RegisterSymbolActionWithExclusionsVerification(Analyzer.HandleFieldDeclaration, SymbolKind.Field);
         }
 
         private static class Analyzer

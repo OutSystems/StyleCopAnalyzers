@@ -68,7 +68,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
         private static void HandleCompilationStart(CompilationStartAnalysisContext context)
         {
             AnalyzerInstance instance = new AnalyzerInstance(context.Compilation.GetOrCreateUsingAliasCache());
-            context.RegisterSyntaxNodeAction(instance.HandleAttributeNode, SyntaxKind.Attribute);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(instance.HandleAttributeNode, SyntaxKind.Attribute);
         }
 
         /// <summary>

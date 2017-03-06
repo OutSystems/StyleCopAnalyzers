@@ -53,7 +53,7 @@ namespace StyleCop.Analyzers.NamingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(ParameterAction, SyntaxKind.Parameter);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ParameterAction, SyntaxKind.Parameter);
         }
 
         private static void HandleParameter(SyntaxNodeAnalysisContext context)

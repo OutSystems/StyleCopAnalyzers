@@ -104,7 +104,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private static void HandleCompilationStart(CompilationStartAnalysisContext context)
         {
             var diagnosticOptions = context.Compilation.Options.SpecificDiagnosticOptions;
-            context.RegisterSyntaxTreeAction(c => HandleSyntaxTreeAnalysis(c, diagnosticOptions));
+            context.RegisterSyntaxTreeActionWithExclusionsVerification(c => HandleSyntaxTreeAnalysis(c, diagnosticOptions));
         }
 
         private static void HandleSyntaxTreeAnalysis(SyntaxTreeAnalysisContext context, ImmutableDictionary<string, ReportDiagnostic> specificDiagnosticOptions)

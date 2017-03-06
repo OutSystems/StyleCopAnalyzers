@@ -58,10 +58,10 @@ namespace StyleCop.Analyzers.SpacingRules
             context.EnableConcurrentExecution();
 
             // handle everything except nameof
-            context.RegisterSyntaxTreeAction(SyntaxTreeAction);
+            context.RegisterSyntaxTreeActionWithExclusionsVerification(SyntaxTreeAction);
 
             // handle nameof (which appears as an invocation expression??)
-            context.RegisterSyntaxNodeAction(InvocationExpressionAction, SyntaxKind.InvocationExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(InvocationExpressionAction, SyntaxKind.InvocationExpression);
         }
 
         private static void HandleSyntaxTree(SyntaxTreeAnalysisContext context)

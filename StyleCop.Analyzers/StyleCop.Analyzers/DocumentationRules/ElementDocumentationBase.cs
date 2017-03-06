@@ -57,17 +57,17 @@ namespace StyleCop.Analyzers.DocumentationRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(this.methodDeclarationAction, SyntaxKind.MethodDeclaration);
-            context.RegisterSyntaxNodeAction(this.constructorDeclarationAction, SyntaxKind.ConstructorDeclaration);
-            context.RegisterSyntaxNodeAction(this.delegateDeclarationAction, SyntaxKind.DelegateDeclaration);
-            context.RegisterSyntaxNodeAction(this.indexerDeclarationAction, SyntaxKind.IndexerDeclaration);
-            context.RegisterSyntaxNodeAction(this.operatorDeclarationAction, SyntaxKind.OperatorDeclaration);
-            context.RegisterSyntaxNodeAction(this.conversionOperatorDeclarationAction, SyntaxKind.ConversionOperatorDeclaration);
-            context.RegisterSyntaxNodeAction(this.classDeclarationAction, SyntaxKind.ClassDeclaration);
-            context.RegisterSyntaxNodeAction(this.structDeclarationAction, SyntaxKind.StructDeclaration);
-            context.RegisterSyntaxNodeAction(this.enumDeclarationAction, SyntaxKind.EnumDeclaration);
-            context.RegisterSyntaxNodeAction(this.fieldDeclarationAction, SyntaxKind.FieldDeclaration);
-            context.RegisterSyntaxNodeAction(this.propertyDeclarationAction, SyntaxKind.PropertyDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.methodDeclarationAction, SyntaxKind.MethodDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.constructorDeclarationAction, SyntaxKind.ConstructorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.delegateDeclarationAction, SyntaxKind.DelegateDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.indexerDeclarationAction, SyntaxKind.IndexerDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.operatorDeclarationAction, SyntaxKind.OperatorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.conversionOperatorDeclarationAction, SyntaxKind.ConversionOperatorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.classDeclarationAction, SyntaxKind.ClassDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.structDeclarationAction, SyntaxKind.StructDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.enumDeclarationAction, SyntaxKind.EnumDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.fieldDeclarationAction, SyntaxKind.FieldDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(this.propertyDeclarationAction, SyntaxKind.PropertyDeclaration);
         }
 
         /// <summary>

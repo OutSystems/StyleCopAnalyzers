@@ -47,7 +47,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(RegionDirectiveTriviaAction, SyntaxKind.RegionDirectiveTrivia);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(RegionDirectiveTriviaAction, SyntaxKind.RegionDirectiveTrivia);
         }
 
         /// <summary>

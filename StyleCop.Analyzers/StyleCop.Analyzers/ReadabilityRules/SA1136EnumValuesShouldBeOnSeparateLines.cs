@@ -41,7 +41,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(HandleEnumDeclarationAction, SyntaxKind.EnumDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(HandleEnumDeclarationAction, SyntaxKind.EnumDeclaration);
         }
 
         private static void HandleEnumDeclaration(SyntaxNodeAnalysisContext context)

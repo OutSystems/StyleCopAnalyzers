@@ -198,21 +198,21 @@ namespace StyleCop.Analyzers.SpacingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(ConstructorDeclarationAction, SyntaxKind.ConstructorDeclaration);
-            context.RegisterSyntaxNodeAction(ConditionalExpressionAction, SyntaxKind.ConditionalExpression);
-            context.RegisterSyntaxNodeAction(TypeParameterConstraintClauseAction, SyntaxKind.TypeParameterConstraintClause);
-            context.RegisterSyntaxNodeAction(BinaryExpressionAction, BinaryExpressionKinds);
-            context.RegisterSyntaxNodeAction(PrefixUnaryExpressionAction, PrefixUnaryExpressionKinds);
-            context.RegisterSyntaxNodeAction(PostfixUnaryExpressionAction, PostfixUnaryExpressionKinds);
-            context.RegisterSyntaxNodeAction(AssignmentExpressionAction, AssignmentExpressionKinds);
-            context.RegisterSyntaxNodeAction(CastExpressionAction, SyntaxKind.CastExpression);
-            context.RegisterSyntaxNodeAction(EqualsValueClauseAction, SyntaxKind.EqualsValueClause);
-            context.RegisterSyntaxNodeAction(LambdaExpressionAction, SyntaxKinds.LambdaExpression);
-            context.RegisterSyntaxNodeAction(PropertyDeclarationAction, SyntaxKind.PropertyDeclaration);
-            context.RegisterSyntaxNodeAction(IndexerDeclarationAction, SyntaxKind.IndexerDeclaration);
-            context.RegisterSyntaxNodeAction(MethodDeclarationAction, SyntaxKind.MethodDeclaration);
-            context.RegisterSyntaxNodeAction(OperatorDeclarationAction, SyntaxKind.OperatorDeclaration);
-            context.RegisterSyntaxNodeAction(ConversionOperatorDeclarationAction, SyntaxKind.ConversionOperatorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ConstructorDeclarationAction, SyntaxKind.ConstructorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ConditionalExpressionAction, SyntaxKind.ConditionalExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(TypeParameterConstraintClauseAction, SyntaxKind.TypeParameterConstraintClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BinaryExpressionAction, BinaryExpressionKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(PrefixUnaryExpressionAction, PrefixUnaryExpressionKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(PostfixUnaryExpressionAction, PostfixUnaryExpressionKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(AssignmentExpressionAction, AssignmentExpressionKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(CastExpressionAction, SyntaxKind.CastExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(EqualsValueClauseAction, SyntaxKind.EqualsValueClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(LambdaExpressionAction, SyntaxKinds.LambdaExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(PropertyDeclarationAction, SyntaxKind.PropertyDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(IndexerDeclarationAction, SyntaxKind.IndexerDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(MethodDeclarationAction, SyntaxKind.MethodDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(OperatorDeclarationAction, SyntaxKind.OperatorDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ConversionOperatorDeclarationAction, SyntaxKind.ConversionOperatorDeclaration);
         }
 
         private static void HandleConstructorDeclaration(SyntaxNodeAnalysisContext context)

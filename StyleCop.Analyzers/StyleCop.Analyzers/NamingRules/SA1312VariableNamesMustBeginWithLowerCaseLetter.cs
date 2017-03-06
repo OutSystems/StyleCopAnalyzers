@@ -57,14 +57,14 @@ namespace StyleCop.Analyzers.NamingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(VariableDeclarationAction, SyntaxKind.VariableDeclaration);
-            context.RegisterSyntaxNodeAction(CatchDeclarationAction, SyntaxKind.CatchDeclaration);
-            context.RegisterSyntaxNodeAction(QueryContinuationAction, SyntaxKind.QueryContinuation);
-            context.RegisterSyntaxNodeAction(FromClauseAction, SyntaxKind.FromClause);
-            context.RegisterSyntaxNodeAction(LetClauseAction, SyntaxKind.LetClause);
-            context.RegisterSyntaxNodeAction(JoinClauseAction, SyntaxKind.JoinClause);
-            context.RegisterSyntaxNodeAction(JoinIntoClauseAction, SyntaxKind.JoinIntoClause);
-            context.RegisterSyntaxNodeAction(ForEachStatementAction, SyntaxKind.ForEachStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(VariableDeclarationAction, SyntaxKind.VariableDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(CatchDeclarationAction, SyntaxKind.CatchDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(QueryContinuationAction, SyntaxKind.QueryContinuation);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(FromClauseAction, SyntaxKind.FromClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(LetClauseAction, SyntaxKind.LetClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(JoinClauseAction, SyntaxKind.JoinClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(JoinIntoClauseAction, SyntaxKind.JoinIntoClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ForEachStatementAction, SyntaxKind.ForEachStatement);
         }
 
         private static void HandleVariableDeclaration(SyntaxNodeAnalysisContext context)

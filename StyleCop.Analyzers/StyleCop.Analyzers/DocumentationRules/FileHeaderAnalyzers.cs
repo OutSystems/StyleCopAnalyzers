@@ -184,7 +184,7 @@ namespace StyleCop.Analyzers.DocumentationRules
             // Disabling SA1633 will disable all other header related diagnostics.
             if (!compilation.IsAnalyzerSuppressed(SA1633Identifier))
             {
-                context.RegisterSyntaxTreeAction((ctx, settings) => Analyzer.HandleSyntaxTree(ctx, settings, compilation));
+                context.RegisterSyntaxTreeActionWithExclusionsVerification((ctx, settings) => Analyzer.HandleSyntaxTree(ctx, settings, compilation));
             }
         }
 

@@ -66,9 +66,9 @@ namespace StyleCop.Analyzers.LayoutRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(ElseStatementAction, SyntaxKind.ElseClause);
-            context.RegisterSyntaxNodeAction(CatchClauseAction, SyntaxKind.CatchClause);
-            context.RegisterSyntaxNodeAction(FinallyClauseAction, SyntaxKind.FinallyClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ElseStatementAction, SyntaxKind.ElseClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(CatchClauseAction, SyntaxKind.CatchClause);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(FinallyClauseAction, SyntaxKind.FinallyClause);
         }
 
         private static void HandleElseStatement(SyntaxNodeAnalysisContext context)

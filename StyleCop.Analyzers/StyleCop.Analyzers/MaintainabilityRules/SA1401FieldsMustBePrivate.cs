@@ -47,7 +47,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSymbolAction(AnalyzeFieldAction, SymbolKind.Field);
+            context.RegisterSymbolActionWithExclusionsVerification(AnalyzeFieldAction, SymbolKind.Field);
         }
 
         private static class Analyzer

@@ -54,7 +54,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(StringLiteralExpressionAction, SyntaxKind.StringLiteralExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(StringLiteralExpressionAction, SyntaxKind.StringLiteralExpression);
         }
 
         private static void HandleStringLiteralExpression(SyntaxNodeAnalysisContext context)

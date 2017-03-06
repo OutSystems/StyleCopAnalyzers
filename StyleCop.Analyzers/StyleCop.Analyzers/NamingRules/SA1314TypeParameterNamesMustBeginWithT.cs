@@ -44,7 +44,7 @@ namespace StyleCop.Analyzers.NamingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(TypeParameterAction, SyntaxKind.TypeParameter);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(TypeParameterAction, SyntaxKind.TypeParameter);
         }
 
         private static void HandleTypeParameter(SyntaxNodeAnalysisContext context)

@@ -8,6 +8,7 @@ namespace TestHelper
     using Microsoft.CodeAnalysis;
     using Microsoft.CodeAnalysis.Diagnostics;
     using Microsoft.CodeAnalysis.Text;
+    using StyleCop.Analyzers;
     using StyleCop.Analyzers.Helpers;
 
     /// <summary>
@@ -38,7 +39,7 @@ namespace TestHelper
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxTreeAction(SyntaxTreeAction);
+            context.RegisterSyntaxTreeActionWithExclusionsVerification(SyntaxTreeAction);
         }
 
         private static void AnalyzeTree(SyntaxTreeAnalysisContext context)

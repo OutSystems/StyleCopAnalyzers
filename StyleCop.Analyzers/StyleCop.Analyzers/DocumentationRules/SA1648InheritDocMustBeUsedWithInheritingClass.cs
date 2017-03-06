@@ -62,8 +62,8 @@ namespace StyleCop.Analyzers.DocumentationRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(BaseTypeLikeDeclarationAction, HandledTypeLikeDeclarationKinds);
-            context.RegisterSyntaxNodeAction(MemberDeclarationAction, MemberDeclarationKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BaseTypeLikeDeclarationAction, HandledTypeLikeDeclarationKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(MemberDeclarationAction, MemberDeclarationKinds);
         }
 
         private static void HandleBaseTypeLikeDeclaration(SyntaxNodeAnalysisContext context)

@@ -15,6 +15,17 @@ namespace StyleCop.Analyzers.Test
     /// </summary>
     public class ExclusionTests : DiagnosticVerifier
     {
+        private const string TestSettings = @"
+ {
+   ""settings"": {
+     ""excludedFiles"": [ ""test.Excluded.cs"" ],
+     ""excludedFileFilters"": [ ""\\.generated\\.cs$"", ""\\.designer\\.cs$"" ]
+   }
+ }
+ ";
+
+        private string customSettings;
+
         /// <summary>
         /// Gets the statements that will be used in the theory test cases.
         /// </summary>
@@ -25,6 +36,7 @@ namespace StyleCop.Analyzers.Test
         {
             get
             {
+                yield return new[] { "Test.excluded.cs", string.Format("class Foo {{ {0} }}", System.Environment.NewLine) };
                 yield return new[] { "Test.cs", string.Empty };
                 yield return new[] { "Test.cs", "   " };
                 yield return new[] { "Test.cs", "\r\n\r\n" };
@@ -62,6 +74,7 @@ namespace StyleCop.Analyzers.Test
         [MemberData(nameof(ShouldBeExcluded))]
         public async Task TestIsExcludedAsync(string filename, string testCode)
         {
+            this.customSettings = TestSettings;
             await this.VerifyCSharpDiagnosticAsync(testCode, EmptyDiagnosticResults, CancellationToken.None, filename: filename).ConfigureAwait(false);
         }
 
@@ -75,6 +88,7 @@ namespace StyleCop.Analyzers.Test
         [MemberData(nameof(ShouldNotBeExcluded))]
         public async Task TestIsNotExcludedAsync(string filename, string testCode)
         {
+            this.customSettings = TestSettings;
             var result = this.CSharpDiagnostic().WithLocation(filename, 1, 1);
 
             await this.VerifyCSharpDiagnosticAsync(testCode, result, CancellationToken.None, filename: filename).ConfigureAwait(false);
@@ -84,6 +98,16 @@ namespace StyleCop.Analyzers.Test
         protected override IEnumerable<DiagnosticAnalyzer> GetCSharpDiagnosticAnalyzers()
         {
             yield return new ExclusionTestAnalyzer();
+        }
+
+        protected override string GetSettings()
+        {
+            if (!string.IsNullOrWhiteSpace(this.customSettings))
+            {
+                return this.customSettings;
+            }
+
+            return base.GetSettings();
         }
     }
 }

@@ -59,7 +59,7 @@ namespace StyleCop.Analyzers.LayoutRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(DoStatementAction, SyntaxKind.DoStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(DoStatementAction, SyntaxKind.DoStatement);
         }
 
         private static void HandleDoStatement(SyntaxNodeAnalysisContext context)

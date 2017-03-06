@@ -51,7 +51,7 @@ namespace StyleCop.Analyzers.NamingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(InterfaceDeclarationAction, SyntaxKind.InterfaceDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(InterfaceDeclarationAction, SyntaxKind.InterfaceDeclaration);
         }
 
         private static void HandleInterfaceDeclaration(SyntaxNodeAnalysisContext context)

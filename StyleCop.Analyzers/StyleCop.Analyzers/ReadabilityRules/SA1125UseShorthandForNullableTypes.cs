@@ -46,7 +46,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(GenericNameAction, SyntaxKind.GenericName);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(GenericNameAction, SyntaxKind.GenericName);
         }
 
         private static void HandleGenericName(SyntaxNodeAnalysisContext context)

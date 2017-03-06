@@ -42,7 +42,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(AnonymousMethodExpressionAction, SyntaxKind.AnonymousMethodExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(AnonymousMethodExpressionAction, SyntaxKind.AnonymousMethodExpression);
         }
 
         private static void HandleAnonymousMethodExpression(SyntaxNodeAnalysisContext context)

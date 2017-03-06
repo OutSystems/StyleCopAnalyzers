@@ -3,6 +3,7 @@
 
 namespace StyleCop.Analyzers.Settings.ObjectModel
 {
+    using System.Collections.Immutable;
     using Newtonsoft.Json;
 
     [JsonObject(MemberSerialization.OptIn)]
@@ -57,6 +58,18 @@ namespace StyleCop.Analyzers.Settings.ObjectModel
         private DocumentationSettings documentationRules;
 
         /// <summary>
+        /// This is the backing field for the <see cref="ExcludedFiles"/> property.
+        /// </summary>
+        [JsonProperty("excludedFiles", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        private ImmutableArray<string> excludedFiles;
+
+        /// <summary>
+        /// This is the backing field for the <see cref="ExcludedFileFilters"/> property.
+        /// </summary>
+        [JsonProperty("excludedFileFilters", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        private ImmutableArray<string> excludedFileFilters;
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="StyleCopSettings"/> class during JSON deserialization.
         /// </summary>
         [JsonConstructor]
@@ -71,6 +84,8 @@ namespace StyleCop.Analyzers.Settings.ObjectModel
             this.maintainabilityRules = new MaintainabilitySettings();
             this.layoutRules = new LayoutSettings();
             this.documentationRules = new DocumentationSettings();
+            this.excludedFileFilters = default(ImmutableArray<string>);
+            this.excludedFiles = default(ImmutableArray<string>);
         }
 
         public IndentationSettings Indentation =>
@@ -96,5 +111,11 @@ namespace StyleCop.Analyzers.Settings.ObjectModel
 
         public DocumentationSettings DocumentationRules =>
             this.documentationRules;
+
+        public ImmutableArray<string> ExcludedFiles =>
+            this.excludedFiles;
+
+        public ImmutableArray<string> ExcludedFileFilters =>
+            this.excludedFileFilters;
     }
 }

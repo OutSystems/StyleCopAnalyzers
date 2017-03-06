@@ -78,7 +78,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(BaseExpressionAction, SyntaxKind.BaseExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BaseExpressionAction, SyntaxKind.BaseExpression);
         }
 
         private static void HandleBaseExpression(SyntaxNodeAnalysisContext context)

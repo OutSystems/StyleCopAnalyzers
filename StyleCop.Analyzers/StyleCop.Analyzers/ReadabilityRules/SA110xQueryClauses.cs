@@ -92,7 +92,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(QueryExpressionAction, SyntaxKind.QueryExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(QueryExpressionAction, SyntaxKind.QueryExpression);
         }
 
         private static void HandleQueryExpression(SyntaxNodeAnalysisContext context)

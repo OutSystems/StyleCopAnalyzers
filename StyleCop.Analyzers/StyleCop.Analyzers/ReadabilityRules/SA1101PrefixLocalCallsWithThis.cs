@@ -59,8 +59,8 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(MemberAccessExpressionAction, SyntaxKind.SimpleMemberAccessExpression);
-            context.RegisterSyntaxNodeAction(SimpleNameAction, SyntaxKinds.SimpleName);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(MemberAccessExpressionAction, SyntaxKind.SimpleMemberAccessExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(SimpleNameAction, SyntaxKinds.SimpleName);
         }
 
         /// <summary>

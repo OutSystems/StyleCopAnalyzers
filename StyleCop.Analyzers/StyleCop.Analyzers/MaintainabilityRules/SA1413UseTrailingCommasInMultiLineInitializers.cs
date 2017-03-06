@@ -72,9 +72,9 @@ namespace StyleCop.Analyzers.MaintainabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(HandleObjectInitializerAction, ObjectInitializerKinds);
-            context.RegisterSyntaxNodeAction(HandleAnonymousObjectInitializerAction, SyntaxKind.AnonymousObjectCreationExpression);
-            context.RegisterSyntaxNodeAction(HandleEnumMemberDeclarationAction, SyntaxKind.EnumDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(HandleObjectInitializerAction, ObjectInitializerKinds);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(HandleAnonymousObjectInitializerAction, SyntaxKind.AnonymousObjectCreationExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(HandleEnumMemberDeclarationAction, SyntaxKind.EnumDeclaration);
         }
 
         private static void HandleEnumMemberDeclarationAction(SyntaxNodeAnalysisContext context)

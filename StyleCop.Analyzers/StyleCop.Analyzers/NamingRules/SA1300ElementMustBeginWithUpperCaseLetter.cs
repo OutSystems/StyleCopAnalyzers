@@ -67,16 +67,16 @@ namespace StyleCop.Analyzers.NamingRules
 
             // Note: Interfaces are handled by SA1302
             // Note: Fields are handled by SA1303 through SA1311
-            context.RegisterSyntaxNodeAction(NamespaceDeclarationAction, SyntaxKind.NamespaceDeclaration);
-            context.RegisterSyntaxNodeAction(ClassDeclarationAction, SyntaxKind.ClassDeclaration);
-            context.RegisterSyntaxNodeAction(EnumDeclarationAction, SyntaxKind.EnumDeclaration);
-            context.RegisterSyntaxNodeAction(EnumMemberDeclarationAction, SyntaxKind.EnumMemberDeclaration);
-            context.RegisterSyntaxNodeAction(StructDeclarationAction, SyntaxKind.StructDeclaration);
-            context.RegisterSyntaxNodeAction(DelegateDeclarationAction, SyntaxKind.DelegateDeclaration);
-            context.RegisterSyntaxNodeAction(EventDeclarationAction, SyntaxKind.EventDeclaration);
-            context.RegisterSyntaxNodeAction(EventFieldDeclarationAction, SyntaxKind.EventFieldDeclaration);
-            context.RegisterSyntaxNodeAction(MethodDeclarationAction, SyntaxKind.MethodDeclaration);
-            context.RegisterSyntaxNodeAction(PropertyDeclarationAction, SyntaxKind.PropertyDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(NamespaceDeclarationAction, SyntaxKind.NamespaceDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(ClassDeclarationAction, SyntaxKind.ClassDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(EnumDeclarationAction, SyntaxKind.EnumDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(EnumMemberDeclarationAction, SyntaxKind.EnumMemberDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(StructDeclarationAction, SyntaxKind.StructDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(DelegateDeclarationAction, SyntaxKind.DelegateDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(EventDeclarationAction, SyntaxKind.EventDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(EventFieldDeclarationAction, SyntaxKind.EventFieldDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(MethodDeclarationAction, SyntaxKind.MethodDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(PropertyDeclarationAction, SyntaxKind.PropertyDeclaration);
         }
 
         private static void HandleNamespaceDeclaration(SyntaxNodeAnalysisContext context)

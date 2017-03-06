@@ -46,7 +46,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
 
         private static void HandleCompilationStart(CompilationStartAnalysisContext context)
         {
-            context.RegisterSyntaxNodeAction(GenericNameAction, SyntaxKind.CastExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(GenericNameAction, SyntaxKind.CastExpression);
         }
 
         private static void HandleGenericName(SyntaxNodeAnalysisContext context)

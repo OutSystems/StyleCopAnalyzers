@@ -89,7 +89,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
             // is disabled
             if (context.Compilation.Options.SpecificDiagnosticOptions.GetValueOrDefault(Descriptor.Id) != Microsoft.CodeAnalysis.ReportDiagnostic.Suppress)
             {
-                context.RegisterSyntaxNodeAction(ParenthesizedExpressionAction, SyntaxKind.ParenthesizedExpression);
+                context.RegisterSyntaxNodeActionWithExclusionsVerification(ParenthesizedExpressionAction, SyntaxKind.ParenthesizedExpression);
             }
         }
 

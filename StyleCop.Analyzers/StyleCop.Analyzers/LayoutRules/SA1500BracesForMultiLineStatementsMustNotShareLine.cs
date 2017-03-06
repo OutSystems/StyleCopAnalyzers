@@ -86,13 +86,13 @@ namespace StyleCop.Analyzers.LayoutRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(NamespaceDeclarationAction, SyntaxKind.NamespaceDeclaration);
-            context.RegisterSyntaxNodeAction(BaseTypeDeclarationAction, SyntaxKinds.BaseTypeDeclaration);
-            context.RegisterSyntaxNodeAction(AccessorListAction, SyntaxKind.AccessorList);
-            context.RegisterSyntaxNodeAction(BlockAction, SyntaxKind.Block);
-            context.RegisterSyntaxNodeAction(SwitchStatementAction, SyntaxKind.SwitchStatement);
-            context.RegisterSyntaxNodeAction(InitializerExpressionAction, SyntaxKinds.InitializerExpression);
-            context.RegisterSyntaxNodeAction(AnonymousObjectCreationExpressionAction, SyntaxKind.AnonymousObjectCreationExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(NamespaceDeclarationAction, SyntaxKind.NamespaceDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BaseTypeDeclarationAction, SyntaxKinds.BaseTypeDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(AccessorListAction, SyntaxKind.AccessorList);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BlockAction, SyntaxKind.Block);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(SwitchStatementAction, SyntaxKind.SwitchStatement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(InitializerExpressionAction, SyntaxKinds.InitializerExpression);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(AnonymousObjectCreationExpressionAction, SyntaxKind.AnonymousObjectCreationExpression);
         }
 
         private static void HandleNamespaceDeclaration(SyntaxNodeAnalysisContext context)

@@ -76,8 +76,8 @@ namespace StyleCop.Analyzers.DocumentationRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(XmlElementAction, SyntaxKind.XmlElement);
-            context.RegisterSyntaxNodeAction(XmlEmptyElementAction, SyntaxKind.XmlEmptyElement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(XmlElementAction, SyntaxKind.XmlElement);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(XmlEmptyElementAction, SyntaxKind.XmlEmptyElement);
         }
 
         private static void HandleXmlElement(SyntaxNodeAnalysisContext context)

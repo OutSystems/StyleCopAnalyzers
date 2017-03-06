@@ -46,7 +46,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(BlockAction, SyntaxKind.Block);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BlockAction, SyntaxKind.Block);
         }
 
         private static void HandleBlock(SyntaxNodeAnalysisContext context)

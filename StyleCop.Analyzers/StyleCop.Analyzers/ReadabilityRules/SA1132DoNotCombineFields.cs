@@ -41,7 +41,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(BaseFieldDeclarationAction, SyntaxKinds.BaseFieldDeclaration);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(BaseFieldDeclarationAction, SyntaxKinds.BaseFieldDeclaration);
         }
 
         private static void HandleBaseFieldDeclaration(SyntaxNodeAnalysisContext context)

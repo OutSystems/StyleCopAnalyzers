@@ -48,7 +48,7 @@ namespace StyleCop.Analyzers.SpacingRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(NullableTypeAction, SyntaxKind.NullableType);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(NullableTypeAction, SyntaxKind.NullableType);
         }
 
         private static void HandleNullableType(SyntaxNodeAnalysisContext context)

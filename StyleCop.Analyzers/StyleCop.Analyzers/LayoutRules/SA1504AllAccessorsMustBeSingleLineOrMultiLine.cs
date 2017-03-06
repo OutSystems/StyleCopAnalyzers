@@ -87,7 +87,7 @@ namespace StyleCop.Analyzers.LayoutRules
             context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
 
-            context.RegisterSyntaxNodeAction(AccessorListAction, SyntaxKind.AccessorList);
+            context.RegisterSyntaxNodeActionWithExclusionsVerification(AccessorListAction, SyntaxKind.AccessorList);
         }
 
         private static void HandleAccessorList(SyntaxNodeAnalysisContext context)
