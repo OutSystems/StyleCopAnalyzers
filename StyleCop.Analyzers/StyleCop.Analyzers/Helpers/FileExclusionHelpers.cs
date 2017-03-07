@@ -21,22 +21,22 @@ namespace StyleCop.Analyzers.Helpers
     {
         internal static bool IsFileExcludedFromAnalysis(SyntaxTreeAnalysisContext context)
         {
-            return IsFileExcludedFromAnalysis(context.GetStyleCopSettings(context.CancellationToken), context.Tree);
+            return IsFileExcludedFromAnalysis(context.GetStyleCopSettings(context.CancellationToken), context.Options.GetSettingsFolder(), context.Tree);
         }
 
         internal static bool IsFileExcludedFromAnalysis(SyntaxTreeAnalysisContext context, StyleCopSettings settings)
         {
-            return IsFileExcludedFromAnalysis(settings, context.Tree);
+            return IsFileExcludedFromAnalysis(settings, context.Options.GetSettingsFolder(), context.Tree);
         }
 
         internal static bool IsFileExcludedFromAnalysis(SyntaxNodeAnalysisContext context)
         {
-            return IsFileExcludedFromAnalysis(context.Options.GetStyleCopSettings(context.CancellationToken), context.Node.SyntaxTree);
+            return IsFileExcludedFromAnalysis(context.Options.GetStyleCopSettings(context.CancellationToken), context.Options.GetSettingsFolder(), context.Node.SyntaxTree);
         }
 
         internal static bool IsFileExcludedFromAnalysis(SyntaxNodeAnalysisContext context, StyleCopSettings settings)
         {
-            return IsFileExcludedFromAnalysis(settings, context.Node.SyntaxTree);
+            return IsFileExcludedFromAnalysis(settings, context.Options.GetSettingsFolder(), context.Node.SyntaxTree);
         }
 
         internal static bool IsFileExcludedFromAnalysis(SymbolAnalysisContext context)
@@ -46,13 +46,18 @@ namespace StyleCop.Analyzers.Helpers
                 return false;
             }
 
-            return IsFileExcludedFromAnalysis(context.Options.GetStyleCopSettings(context.CancellationToken), context.Symbol.Locations[0].SourceTree);
+            return IsFileExcludedFromAnalysis(context.Options.GetStyleCopSettings(context.CancellationToken), context.Options.GetSettingsFolder(), context.Symbol.Locations[0].SourceTree);
         }
 
-        private static bool IsFileExcludedFromAnalysis(StyleCopSettings settings, Microsoft.CodeAnalysis.SyntaxTree tree)
+        private static bool IsFileExcludedFromAnalysis(StyleCopSettings settings, string settingsFolder, Microsoft.CodeAnalysis.SyntaxTree tree)
         {
-            return (settings?.ExcludedFiles != null && settings.ExcludedFiles.Any(file => tree.FilePath.Equals(file, StringComparison.OrdinalIgnoreCase))) ||
+            return (settings?.ExcludedFiles != null && settings.ExcludedFiles.Any(file => tree.FilePath.Equals(NormalizePath(Path.Combine(settingsFolder, file)), StringComparison.OrdinalIgnoreCase))) ||
                 (settings?.ExcludedFileFilters != null && settings.ExcludedFileFilters.Any(fileFilter => Regex.IsMatch(tree.FilePath, fileFilter, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture)));
         }
+
+        private static string NormalizePath(string path) {
+            return new Uri(path).LocalPath;
+        }
+
     }
 }

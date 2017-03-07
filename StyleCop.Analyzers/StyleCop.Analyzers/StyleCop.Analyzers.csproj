@@ -108,7 +108,6 @@
     <Compile Include="Helpers\DeclarationModifiersHelper.cs" />
     <Compile Include="Helpers\DiagnosticOptionsHelper.cs" />
     <Compile Include="Helpers\DocumentationCommentExtensions.cs" />
-    <Compile Include="Helpers\RegistrationHelpers.cs" />
     <Compile Include="Helpers\FileExclusionHelpers.cs" />
     <Compile Include="Helpers\FileHeader.cs" />
     <Compile Include="Helpers\FileHeaderHelpers.cs" />

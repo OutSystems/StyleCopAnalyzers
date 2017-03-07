@@ -24,6 +24,21 @@ namespace StyleCop.Analyzers
                 text => GetStyleCopSettings(text, DeserializationFailureBehavior.ReturnDefaultSettings));
 
         /// <summary>
+        /// Returns the folder where the settings file reside
+        /// </summary>
+        /// <param name="options">The analyzer options that will be used to determine the StyleCop settings.</param>
+        /// <returns>Empty string if no settings file is available.</returns>
+        internal static string GetSettingsFolder(this AnalyzerOptions options) {
+            foreach (var additionalFile in options.AdditionalFiles) {
+                if (Path.GetFileName(additionalFile.Path).ToLowerInvariant() == SettingsFileName) {
+                    return Path.GetDirectoryName(additionalFile.Path);
+                }
+            }
+
+            return string.Empty;
+        }
+
+        /// <summary>
         /// Gets the StyleCop settings.
         /// </summary>
         /// <remarks>
