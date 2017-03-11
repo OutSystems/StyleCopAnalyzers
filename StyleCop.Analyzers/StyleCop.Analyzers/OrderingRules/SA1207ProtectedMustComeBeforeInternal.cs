@@ -31,7 +31,7 @@ namespace StyleCop.Analyzers.OrderingRules
         private const string Title = "Protected must come before internal";
         private const string MessageFormat = "The keyword 'protected' must come before 'internal'.";
         private const string Description = "The keyword 'protected' is positioned after the keyword 'internal' within the declaration of a protected internal C# element.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1207.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1207.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.OrderingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

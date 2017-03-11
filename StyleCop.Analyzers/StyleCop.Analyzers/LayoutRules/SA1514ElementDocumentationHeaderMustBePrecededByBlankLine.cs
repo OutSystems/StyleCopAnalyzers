@@ -69,7 +69,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Element documentation header must be preceded by blank line";
         private const string MessageFormat = "Element documentation header must be preceded by blank line";
         private const string Description = "An element documentation header above a C# element is not preceded by a blank line.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1514.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1514.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

@@ -745,7 +745,7 @@ class Class1
             await this.VerifyCSharpDiagnosticAsync(testCode, EmptyDiagnosticResults, CancellationToken.None).ConfigureAwait(false);
         }
 
-        [Fact(DisplayName = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1944")]
+        [Fact(DisplayName = "https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1944")]
         public async Task TestOverriddenInheritDocAsync()
         {
             var testCode = @"

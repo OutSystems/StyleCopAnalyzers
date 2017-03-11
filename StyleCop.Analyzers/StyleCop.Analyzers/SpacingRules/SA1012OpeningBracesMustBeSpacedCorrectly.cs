@@ -35,7 +35,7 @@ namespace StyleCop.Analyzers.SpacingRules
         private const string Title = "Opening braces must be spaced correctly";
         private const string MessageFormat = "Opening brace must{0} be {1} by a space.";
         private const string Description = "An opening brace within a C# element is not spaced correctly.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1012.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1012.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.SpacingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

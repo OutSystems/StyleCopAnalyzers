@@ -200,7 +200,7 @@ namespace Test
         }
 
         /// <summary>
-        /// Regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1936.
+        /// Regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1936.
         /// </summary>
         /// <remarks>SA1303 should not be reported on <c>enum</c> declarations. SA1300 will be reported in this case.</remarks>
         /// <returns>A <see cref="Task"/> that represents the asynchronous operation.</returns>

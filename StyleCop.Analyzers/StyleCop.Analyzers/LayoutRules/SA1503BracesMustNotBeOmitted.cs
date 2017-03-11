@@ -62,7 +62,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Braces must not be omitted";
         private const string MessageFormat = "Braces must not be omitted";
         private const string Description = "The opening and closing braces for a C# statement have been omitted.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1503.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1503.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

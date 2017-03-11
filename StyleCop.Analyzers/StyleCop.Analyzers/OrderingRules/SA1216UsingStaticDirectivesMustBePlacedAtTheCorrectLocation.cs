@@ -31,7 +31,7 @@ namespace StyleCop.Analyzers.OrderingRules
         private const string Title = "Using static directives must be placed at the correct location.";
         private const string MessageFormat = "Using static directives must be placed at the correct location.";
         private const string Description = "A using static directive is positioned before a regular or after an alias using directive.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1216.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1216.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.OrderingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

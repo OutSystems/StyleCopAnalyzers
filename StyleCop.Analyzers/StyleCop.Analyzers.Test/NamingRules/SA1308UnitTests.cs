@@ -72,7 +72,7 @@ string m_bar = ""baz"";
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#627.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
-        /// <seealso href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/627">#627: Code Fixes For Naming
+        /// <seealso href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/627">#627: Code Fixes For Naming
         /// Rules SA1308 and SA1309 Do Not Always Fix The Name Entirely</seealso>
         [Fact]
         public async Task TestFixingMultipleIdenticalPrefixesAsync()
@@ -97,7 +97,7 @@ string m_bar = ""baz"";
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#627.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
-        /// <seealso href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/627">#627: Code Fixes For Naming
+        /// <seealso href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/627">#627: Code Fixes For Naming
         /// Rules SA1308 and SA1309 Do Not Always Fix The Name Entirely</seealso>
         [Fact]
         public async Task TestFixingMultipleIndependentPrefixesAsync()

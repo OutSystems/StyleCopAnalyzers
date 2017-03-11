@@ -1978,7 +1978,7 @@ namespace StyleCop.Analyzers.Test.SpacingRules
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1585:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1585
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1585
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

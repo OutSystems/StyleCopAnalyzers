@@ -35,7 +35,7 @@ namespace StyleCop.Analyzers.NamingRules
         private const string Title = "Accessible fields must begin with upper-case letter";
         private const string MessageFormat = "Field '{0}' must begin with upper-case letter";
         private const string Description = "The name of a public or internal field in C# does not begin with an upper-case letter.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1307.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1307.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.NamingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

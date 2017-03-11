@@ -114,7 +114,7 @@ namespace StyleCop.Analyzers.DocumentationRules
                 {
                     // Prefer to insert the "non-private" wording for all constructors, even though both are considered
                     // acceptable for private constructors by the diagnostic.
-                    // https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/413
+                    // https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/413
                     standardText = ImmutableArray.Create(
                         string.Format(resourceManager.GetString(nameof(DocumentationResources.NonPrivateConstructorStandardTextFirstPart), culture), typeKindText),
                         string.Format(resourceManager.GetString(nameof(DocumentationResources.NonPrivateConstructorStandardTextSecondPart), culture), typeKindText));

@@ -45,7 +45,7 @@ namespace StyleCopTester
             // in WPF to pump the messages via the Dispatcher.
             // See the following for additional details:
             //   http://blogs.msdn.com/b/pfxteam/archive/2012/01/21/10259307.aspx
-            //   https://github.com/DotNetAnalyzers/StyleCopAnalyzers/pull/1362
+            //   https://github.com/brunocunhasilva/StyleCopAnalyzers/pull/1362
             SynchronizationContext previousContext = SynchronizationContext.Current;
             try
             {

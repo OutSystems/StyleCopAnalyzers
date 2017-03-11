@@ -75,7 +75,7 @@ interface ITest : IBase { }";
             await this.VerifyCSharpDiagnosticAsync(testCode + declaration, expected, CancellationToken.None).ConfigureAwait(false);
         }
 
-        [Theory(DisplayName = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1948")]
+        [Theory(DisplayName = "https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1948")]
         [InlineData("interface Test { }")]
         [InlineData("class Test { }")]
         [InlineData("struct Test { }")]
@@ -112,7 +112,7 @@ interface ITest : IBase { }";
             await this.VerifyCSharpDiagnosticAsync(string.Format(testCode, declaration), expected, CancellationToken.None).ConfigureAwait(false);
         }
 
-        [Theory(DisplayName = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1948")]
+        [Theory(DisplayName = "https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1948")]
         [InlineData("Test() { }")]
         [InlineData("void Foo() { }")]
         [InlineData("string foo;")]

@@ -100,7 +100,7 @@ namespace TestHelper
                         continue;
                     }
 
-                    string expected = $"https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/{diagnostic.Id}.md";
+                    string expected = $"https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/{diagnostic.Id}.md";
                     Assert.Equal(expected, diagnostic.HelpLinkUri);
                 }
             }

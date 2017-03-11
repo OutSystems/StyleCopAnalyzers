@@ -953,7 +953,7 @@ public class TestClass
 
         /// <summary>
         /// Verifies that a pragma before a documentation header is properly handled.
-        /// This is regression for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1223
+        /// This is regression for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1223
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -985,7 +985,7 @@ public class TestClass
 
         /// <summary>
         /// Verifies that preprocessor directives before a documentation header are properly handled.
-        /// This is regression for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1231
+        /// This is regression for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1231
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

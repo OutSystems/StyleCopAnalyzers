@@ -6,11 +6,11 @@
     <title>StyleCop.Analyzers</title>
     <authors>Sam Harwell et. al.</authors>
     <owners>Sam Harwell</owners>
-    <licenseUrl>https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/$version$/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/DotNetAnalyzers/StyleCopAnalyzers</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/brunocunhasilva/StyleCopAnalyzers/$version$/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/brunocunhasilva/StyleCopAnalyzers</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An implementation of StyleCop's rules using Roslyn analyzers and code fixes</description>
-    <releaseNotes>https://github.com/DotNetAnalyzers/StyleCopAnalyzers/releases/$version$</releaseNotes>
+    <releaseNotes>https://github.com/brunocunhasilva/StyleCopAnalyzers/releases/$version$</releaseNotes>
     <copyright>Copyright Sam Harwell 2015</copyright>
     <tags>StyleCop DotNetAnalyzers Roslyn Diagnostic Analyzer</tags>
     <developmentDependency>true</developmentDependency>

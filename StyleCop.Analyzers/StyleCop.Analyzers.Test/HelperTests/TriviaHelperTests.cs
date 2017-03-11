@@ -15,7 +15,7 @@ namespace StyleCop.Analyzers.Test.HelperTests
         [Fact]
         public void TestWithoutLeadingWhitespace()
         {
-            // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1285
+            // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1285
             string testCode = @"public class Foo
 {
     /// Foo

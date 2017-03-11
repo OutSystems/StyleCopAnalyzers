@@ -124,7 +124,7 @@ namespace StyleCop.Analyzers.Test.ReadabilityRules
                 };
 
                 // the following line is a regression test for #464
-                // https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/464
+                // https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/464
                 var conditional = this?.BaseInstanceFieldName;
             }
         }
@@ -240,7 +240,7 @@ namespace StyleCop.Analyzers.Test.ReadabilityRules
                 };
 
                 // the following line is a regression test for #464
-                // https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/464
+                // https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/464
                 var conditional = this?.BaseInstanceFieldName;
             }
         }

@@ -52,7 +52,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Statement must not be on a single line";
         private const string MessageFormat = "Statement must not be on a single line";
         private const string Description = "A C# statement containing opening and closing braces is written completely on a single line.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1501.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1501.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

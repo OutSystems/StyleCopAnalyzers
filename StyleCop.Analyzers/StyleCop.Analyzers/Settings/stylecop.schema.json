@@ -1,6 +1,6 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema",
-  "id": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "id": "https://raw.githubusercontent.com/brunocunhasilva/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
   "title": "StyleCop Analyzers Configuration",
   "description": "Configuration file for StyleCop Analyzers",
   "type": "object",
@@ -116,7 +116,7 @@
             "allowedHungarianPrefixes": {
               "type": "array",
               "description": "Allowed Hungarian notation prefixes.",
-              "default": [ ],
+              "default": [],
               "items": {
                 "type": "string",
                 "pattern": "^[a-z]{1,2}$",
@@ -239,10 +239,28 @@
               "enum": [ "stylecop", "metadata" ]
             },
             "documentationCulture": {
-                "type": "string",
-                "description": "The culture that should be used for documentation comments.",
-                "default": "en-US"
+              "type": "string",
+              "description": "The culture that should be used for documentation comments.",
+              "default": "en-US"
             }
+          }
+        },
+        "excludedFiles": {
+          "type": "array",
+          "description": "The set of files that will be ignored by the Analysers (relative to the position of the stylecop.json settings file).",
+          "default": [],
+          "items": {
+            "type": "string",
+            "uniqueItems": true
+          }
+        },
+        "excludedFileFilters": {
+          "type": "array",
+          "description": "The set of filters that determine which files are ignored by the Analysers (filters are regular expressions verified agains the file names - e.g. '\\.generated\\.cs$')",
+          "default": [],
+          "items": {
+            "type": "string",
+            "uniqueItems": true
           }
         }
       }

@@ -79,7 +79,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Partial element documentation must have summary text";
         private const string MessageFormat = "Partial element documentation must have summary text";
         private const string Description = "The <summary> or <content> tag within the documentation header for a C# code element is empty.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1607.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1607.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

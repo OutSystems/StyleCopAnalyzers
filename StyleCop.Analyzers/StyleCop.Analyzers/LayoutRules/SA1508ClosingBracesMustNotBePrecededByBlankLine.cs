@@ -47,7 +47,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Closing braces must not be preceded by blank line";
         private const string MessageFormat = "A closing brace must not be preceded by a blank line.";
         private const string Description = "A closing brace within a C# element, statement, or expression is preceded by a blank line.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1508.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1508.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

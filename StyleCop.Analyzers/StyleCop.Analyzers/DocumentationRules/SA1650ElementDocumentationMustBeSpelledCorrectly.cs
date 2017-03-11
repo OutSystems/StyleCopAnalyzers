@@ -64,7 +64,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Element documentation must be spelled correctly";
         private const string MessageFormat = "TODO: Message format";
         private const string Description = "The element documentation for the element contains one or more spelling mistakes or unrecognized words.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1650.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1650.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.DisabledByDefault, Description, HelpLink, WellKnownDiagnosticTags.NotConfigurable);

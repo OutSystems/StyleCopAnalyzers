@@ -36,7 +36,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Generic type parameters must be documented";
         private const string MessageFormat = "The documentation for type parameter '{0}' is missing";
         private const string Description = "A generic C# element is missing documentation for one or more of its generic type parameters.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1618.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1618.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

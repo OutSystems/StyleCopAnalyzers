@@ -47,7 +47,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Chained statement blocks must not be preceded by blank line";
         private const string MessageFormat = "'{0}' statement must not be preceded by a blank line";
         private const string Description = "Chained C# statements are separated by a blank line.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1510.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1510.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

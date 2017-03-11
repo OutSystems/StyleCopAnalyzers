@@ -35,7 +35,7 @@ namespace StyleCop.Analyzers.NamingRules
         private const string Title = "Const field names must begin with upper-case letter";
         private const string MessageFormat = "Const field names must begin with upper-case letter.";
         private const string Description = "The name of a constant C# field must begin with an upper-case letter.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1303.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1303.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.NamingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);
@@ -77,7 +77,7 @@ namespace StyleCop.Analyzers.NamingRules
                  *  3. This diagnostic appears targeted for "English" identifiers.
                  *
                  * See DotNetAnalyzers/StyleCopAnalyzers#369 for additional information:
-                 * https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/369
+                 * https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/369
                  */
                 if (!string.IsNullOrEmpty(symbol.Name) &&
                     char.IsLower(symbol.Name[0]) &&

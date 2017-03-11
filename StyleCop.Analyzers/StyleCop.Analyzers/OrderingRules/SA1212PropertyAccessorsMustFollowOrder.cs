@@ -47,7 +47,7 @@ namespace StyleCop.Analyzers.OrderingRules
         private const string Title = "Property accessors must follow order";
         private const string MessageFormat = "A get accessor appears after a set accessor within a property or indexer.";
         private const string Description = "A get accessor appears after a set accessor within a property or indexer.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1212.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1212.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.OrderingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

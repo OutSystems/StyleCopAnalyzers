@@ -55,9 +55,9 @@ namespace StyleCop.Analyzers.Helpers
                 (settings?.ExcludedFileFilters != null && settings.ExcludedFileFilters.Any(fileFilter => Regex.IsMatch(tree.FilePath, fileFilter, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture)));
         }
 
-        private static string NormalizePath(string path) {
+        private static string NormalizePath(string path)
+        {
             return new Uri(path).LocalPath;
         }
-
     }
 }

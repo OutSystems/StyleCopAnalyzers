@@ -32,7 +32,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
         private const string Title = "Store files as UTF-8 with byte order mark";
         private const string MessageFormat = "Store files as UTF-8 with byte order mark";
         private const string Description = "Source files should be saved using the UTF-8 encoding with a byte order mark";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1412.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1412.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.MaintainabilityRules, DiagnosticSeverity.Warning, AnalyzerConstants.DisabledByDefault, Description, HelpLink);

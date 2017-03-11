@@ -42,7 +42,7 @@ namespace NamespaceName { }
         {
             this.settings = @"
 {
-  ""$schema"": ""https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json""
+  ""$schema"": ""https://raw.githubusercontent.com/brunocunhasilva/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json""
   ""settings"": {
     ""documentationRules"": {
       ""companyName"": ""ACME, Inc"",

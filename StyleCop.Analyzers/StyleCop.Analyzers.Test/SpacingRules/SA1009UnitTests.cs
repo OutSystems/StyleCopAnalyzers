@@ -505,13 +505,13 @@ public class TestClass
             TestMethod1()// some comment
             , TestMethod1());
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         TestMethod3(
             true,
             (false || true) // comment
         );
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         if (
             true || // Comment 1
             false // Comment 2
@@ -519,7 +519,7 @@ public class TestClass
         {
         }
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         if (
             true || // Comment 1
             false
@@ -528,7 +528,7 @@ public class TestClass
         {
         }
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         if (
             true || // Comment 1
             false
@@ -555,20 +555,20 @@ public class TestClass
             TestMethod1() // some comment
             , TestMethod1());
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         TestMethod3(
             true,
             (false || true)) // comment
         ;
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         if (
             true || // Comment 1
             false) // Comment 2
         {
         }
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         if (
             true || // Comment 1
             false)
@@ -576,7 +576,7 @@ public class TestClass
         {
         }
 
-        // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1206
+        // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1206
         if (
             true || // Comment 1
             false)
@@ -764,7 +764,7 @@ int a)
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#684:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/684
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/684
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

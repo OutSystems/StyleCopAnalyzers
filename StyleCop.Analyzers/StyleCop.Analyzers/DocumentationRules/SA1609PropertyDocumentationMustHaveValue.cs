@@ -36,7 +36,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Property documentation must have value";
         private const string MessageFormat = "Property documentation must have value";
         private const string Description = "The XML header documentation for a C# property does not contain a <value> tag.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1609.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1609.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.DisabledByDefault, Description, HelpLink);

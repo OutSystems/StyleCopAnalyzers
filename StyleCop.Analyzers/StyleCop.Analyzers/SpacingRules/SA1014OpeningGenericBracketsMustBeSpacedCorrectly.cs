@@ -30,7 +30,7 @@ namespace StyleCop.Analyzers.SpacingRules
         private const string Title = "Opening generic brackets must be spaced correctly";
         private const string MessageFormat = "Opening generic brackets must not be {0} by a space.";
         private const string Description = "An opening generic bracket within a C# element is not spaced correctly.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1014.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1014.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.SpacingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

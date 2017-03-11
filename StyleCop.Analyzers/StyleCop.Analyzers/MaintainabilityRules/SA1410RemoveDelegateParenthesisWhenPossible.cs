@@ -41,7 +41,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
         private const string Title = "Remove delegate parenthesis when possible";
         private const string MessageFormat = "Remove delegate parenthesis when possible";
         private const string Description = "A call to a C# anonymous method does not contain any method parameters, yet the statement still includes parenthesis.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1410.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1410.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.MaintainabilityRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink, WellKnownDiagnosticTags.Unnecessary);

@@ -72,7 +72,7 @@ class Foo
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1476:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1476
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1476
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -100,7 +100,7 @@ class Foo
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1476:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1476
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1476
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -130,7 +130,7 @@ class Foo
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1652:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1652
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1652
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -160,7 +160,7 @@ class Foo
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1652:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1652
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1652
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

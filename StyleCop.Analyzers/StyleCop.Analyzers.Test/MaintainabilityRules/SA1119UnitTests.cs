@@ -1058,7 +1058,7 @@ public class Foo
         [Fact]
         public async Task TestParenthesisInInterpolatedStringThatShouldBeRemovedAsync()
         {
-            // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1284
+            // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1284
             string testCode = @"class Foo
 {
     public void Bar()
@@ -1080,7 +1080,7 @@ public class Foo
         [Fact]
         public async Task TestParenthesisInInterpolatedStringThatShouldNotBeRemovedAsync()
         {
-            // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1284
+            // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1284
             string testCode = @"class Foo
 {
     public void Bar()
@@ -1096,7 +1096,7 @@ public class Foo
         [Fact]
         public async Task TestParenthesisInInterpolatedStringThatShouldNotBeRemovedWithAssignmentAsync()
         {
-            // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1284
+            // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1284
             string testCode = @"class Foo
 {
     public void Bar()

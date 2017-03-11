@@ -166,7 +166,7 @@ namespace StyleCop.Analyzers.OrderingRules
         private const string Title = "Using directives must be placed correctly";
         private const string MessageFormatInside = "Using directive must appear within a namespace declaration";
         private const string DescriptionInside = "A C# using directive is placed outside of a namespace element.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1200.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1200.md";
 
         private const string MessageFormatOutside = "Using directive must appear outside a namespace declaration";
         private const string DescriptionOutside = "A C# using directive is placed inside of a namespace declaration.";

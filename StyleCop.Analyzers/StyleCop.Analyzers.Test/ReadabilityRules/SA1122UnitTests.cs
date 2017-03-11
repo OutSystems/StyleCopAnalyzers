@@ -301,7 +301,7 @@ class ClassName
 
         /// <summary>
         /// Verifies the analyzer will properly handle an empty string in a case label.
-        /// This is a regression test for <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1281">DotNetAnalyzers/StyleCopAnalyzers#1281</see>
+        /// This is a regression test for <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1281">DotNetAnalyzers/StyleCopAnalyzers#1281</see>
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

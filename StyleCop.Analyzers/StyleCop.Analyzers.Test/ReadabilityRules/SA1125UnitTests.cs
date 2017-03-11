@@ -20,7 +20,7 @@ namespace StyleCop.Analyzers.Test.ReadabilityRules
     {
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#385.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/385">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/385">SA1125
         /// UseShorthandForNullableTypes incorrectly reported in XML comment</see>
         /// </summary>
         /// <param name="form">The source code for the content of a <c>cref</c> attribute referencing
@@ -47,7 +47,7 @@ namespace System
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#638.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/638">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/638">SA1125
         /// UseShorthandForNullableTypes incorrectly reported for member in XML comment</see>
         /// </summary>
         /// <param name="form">The source code for the content of a <c>cref</c> attribute referencing
@@ -74,7 +74,7 @@ namespace System
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#385.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/385">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/385">SA1125
         /// UseShorthandForNullableTypes incorrectly reported in XML comment</see>
         /// </summary>
         /// <param name="longForm">The source code for the long form of a <c>cref</c> attribute referencing
@@ -111,7 +111,7 @@ namespace System
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#386.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/386">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/386">SA1125
         /// UseShorthandForNullableTypes incorrectly reported in typeof()</see>
         /// </summary>
         /// <param name="longForm">The source code for the long form of a <c>cref</c> attribute referencing
@@ -220,7 +220,7 @@ namespace System
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#637.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/637">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/637">SA1125
         /// UseShorthandForNullableTypes incorrectly reported in <c>nameof</c> expression</see>
         /// </summary>
         /// <param name="form">The source code for the content of a <c>nameof</c> expression referencing
@@ -248,7 +248,7 @@ namespace System
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#636.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/636">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/636">SA1125
         /// UseShorthandForNullableTypes incorrectly reported for static access through Nullable&lt;int&gt;</see>
         /// </summary>
         /// <remarks>
@@ -280,7 +280,7 @@ namespace System
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#636.
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/636">SA1125
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/636">SA1125
         /// UseShorthandForNullableTypes incorrectly reported for static access through Nullable&lt;int&gt;</see>
         /// </summary>
         /// <param name="form">The source code for an instantiation of <see cref="Nullable{T}"/> which does not use the

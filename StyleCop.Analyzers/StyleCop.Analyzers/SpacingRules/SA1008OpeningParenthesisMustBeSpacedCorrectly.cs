@@ -33,7 +33,7 @@ namespace StyleCop.Analyzers.SpacingRules
         public const string DiagnosticId = "SA1008";
         private const string Title = "Opening parenthesis must be spaced correctly";
         private const string Description = "An opening parenthesis within a C# statement is not spaced correctly.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1008.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1008.md";
 
         private const string MessageNotPreceded = "Opening parenthesis must not be preceded by a space.";
         private const string MessagePreceded = "Opening parenthesis must be preceded by a space.";

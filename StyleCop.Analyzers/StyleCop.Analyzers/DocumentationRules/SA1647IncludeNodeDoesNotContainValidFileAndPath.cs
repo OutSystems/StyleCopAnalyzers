@@ -46,7 +46,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Include node does not contain valid file and path";
         private const string MessageFormat = "TODO: Message format";
         private const string Description = "An include tag within an XML documentation header does not contain valid file and path attribute.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1647.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1647.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.DisabledByDefault, Description, HelpLink, WellKnownDiagnosticTags.NotConfigurable);

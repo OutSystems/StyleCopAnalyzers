@@ -214,7 +214,7 @@ public class Ear : Attribute
         }
 
         /// <summary>
-        /// Regression test for issue 1878 (SA1133CodeFixProvider crash), https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1878
+        /// Regression test for issue 1878 (SA1133CodeFixProvider crash), https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1878
         /// Fixing exception "Unable to cast object of type 'Microsoft.CodeAnalysis.CSharp.Syntax.AttributeListSyntax' to type 'Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax'."
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
@@ -307,7 +307,7 @@ internal class BarAttribute : Attribute
         }
 
         /// <summary>
-        /// Regression test for issue 1879 (SA1133CodeFixProvider does only half the work), https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1879
+        /// Regression test for issue 1879 (SA1133CodeFixProvider does only half the work), https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1879
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -422,7 +422,7 @@ public enum ImplicitUseKindFlags { Assign }
         }
 
         /// <summary>
-        /// Regression test for issue 1883 (whitespace is preserved incorrectly): https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1883
+        /// Regression test for issue 1883 (whitespace is preserved incorrectly): https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1883
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

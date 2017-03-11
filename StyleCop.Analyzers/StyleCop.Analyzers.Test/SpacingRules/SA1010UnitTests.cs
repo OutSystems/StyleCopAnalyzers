@@ -163,7 +163,7 @@ public class Foo
 
         /// <summary>
         /// Verify that index initializers are properly handled.
-        /// Regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1617
+        /// Regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1617
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

@@ -486,7 +486,7 @@ namespace StyleCop.Analyzers.Test.DocumentationRules
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#676 "SA1642 misfires on nested structs,
         /// requiring text describing the outer type"
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/676
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/676
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -553,7 +553,7 @@ class ClassName
 
         /// <summary>
         /// This is a regression test for
-        /// <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/780">DotNetAnalyzers/StyleCopAnalyzers#780</see>.
+        /// <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/780">DotNetAnalyzers/StyleCopAnalyzers#780</see>.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

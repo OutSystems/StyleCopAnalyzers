@@ -123,7 +123,7 @@ public class Foo
         }
 
         /// <summary>
-        /// This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/2184.
+        /// This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/2184.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -145,7 +145,7 @@ public class Foo
         }
 
         /// <summary>
-        /// This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/2180.
+        /// This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/2180.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

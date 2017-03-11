@@ -61,7 +61,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
         private const string Title = "Conditional expressions must declare precedence";
         private const string MessageFormat = "Conditional expressions must declare precedence";
         private const string Description = "A C# statement contains a complex conditional expression which omits parenthesis around operators.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1408.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1408.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.MaintainabilityRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

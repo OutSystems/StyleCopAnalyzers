@@ -24,7 +24,7 @@ A JSON schema is available for **stylecop.json**. By including a reference in **
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json"
+  "$schema": "https://raw.githubusercontent.com/brunocunhasilva/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json"
 }
 ```
 

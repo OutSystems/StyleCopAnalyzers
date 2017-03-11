@@ -333,7 +333,7 @@ public class Foo
         }
     }
 
-    // Valid #28 - Test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1020
+    // Valid #28 - Test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1020
     private static IEnumerable<object> Method()
     {
         yield return new
@@ -342,7 +342,7 @@ public class Foo
         };
     }
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/784
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/784
     public void MultiLineLinqQuery()
     {
         var someQuery = (from f in Enumerable.Empty<int>()
@@ -358,33 +358,33 @@ public class Foo
                               }).ToList();
     }
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1049
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1049
     public object[] ExpressionBodiedProperty =>
         new[]
         {
             new object()
         };
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1049
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1049
     public object[] ExpressionBodiedMethod() =>
         new[]
         {
             new object()
         };
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1049
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1049
     public object[] GetterOnlyAutoProperty1 { get; } =
         new[]
         {
             new object()
         };
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1049
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1049
     public object[] GetterOnlyAutoProperty2 { get; } =
         {
         };
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1173
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1173
     bool contained =
         new[]
         {
@@ -394,7 +394,7 @@ public class Foo
         }
         .Contains(3);
 
-    // This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1583
+    // This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1583
     public void TestTernaryConstruction()
     {
         var target = contained
@@ -710,7 +710,7 @@ public class Foo
 
         /// <summary>
         /// Verifies the analyzer will properly handle an object initializer without assignment.
-        /// This is a regression test for <see href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1301">DotNetAnalyzers/StyleCopAnalyzers#1301</see>.
+        /// This is a regression test for <see href="https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1301">DotNetAnalyzers/StyleCopAnalyzers#1301</see>.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

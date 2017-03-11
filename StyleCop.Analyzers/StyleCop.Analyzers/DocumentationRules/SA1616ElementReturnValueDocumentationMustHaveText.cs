@@ -36,7 +36,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Element return value documentation must have text";
         private const string MessageFormat = "Element return value documentation must have text";
         private const string Description = "The <returns> tag within a C# element's documentation header is empty.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1616.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1616.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

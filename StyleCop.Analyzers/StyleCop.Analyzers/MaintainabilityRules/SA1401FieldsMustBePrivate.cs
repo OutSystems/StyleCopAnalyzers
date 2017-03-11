@@ -30,7 +30,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
         private const string Title = "Fields must be private";
         private const string MessageFormat = "Field must be private";
         private const string Description = "A field within a C# class has an access modifier other than private.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1401.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1401.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.MaintainabilityRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

@@ -210,7 +210,7 @@ class Foo
 {
 }
 
-// This is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1211
+// This is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1211
 [System.Obsolete]
 class ObsoleteType
 {

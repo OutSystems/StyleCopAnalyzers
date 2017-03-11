@@ -37,7 +37,7 @@ namespace StyleCop.Analyzers.NamingRules
         private const string Title = "Static field names must begin with underscore";
         private const string MessageFormat = "Static field '{0}' must begin with an underscore";
         private const string Description = "A static field name in C# does not begin with an underscore.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SX1309S.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SX1309S.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.NamingRules, DiagnosticSeverity.Warning, AnalyzerConstants.DisabledAlternative, Description, HelpLink);

@@ -48,7 +48,7 @@ namespace StyleCop.Analyzers.DocumentationRules
         private const string Title = "Documentation text must contain whitespace";
         private const string MessageFormat = "TODO: Message format";
         private const string Description = "A section of the XML header documentation for a C# element does not contain any whitespace between words.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1630.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1630.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.DocumentationRules, DiagnosticSeverity.Warning, AnalyzerConstants.DisabledByDefault, Description, HelpLink, WellKnownDiagnosticTags.NotConfigurable);

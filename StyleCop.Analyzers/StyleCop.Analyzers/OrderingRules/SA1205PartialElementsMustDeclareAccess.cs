@@ -28,7 +28,7 @@ namespace StyleCop.Analyzers.OrderingRules
         private const string Title = "Partial elements must declare access";
         private const string MessageFormat = "Partial elements must declare an access modifier";
         private const string Description = "The partial element does not have an access modifier defined.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1205.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1205.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.OrderingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

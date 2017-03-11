@@ -39,7 +39,7 @@ namespace StyleCop.Analyzers.NamingRules
         private const string Title = "Element must begin with upper-case letter";
         private const string MessageFormat = "Element '{0}' must begin with an uppercase letter";
         private const string Description = "The name of a C# element does not begin with an upper-case letter.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1300.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1300.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.NamingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);
@@ -208,7 +208,7 @@ namespace StyleCop.Analyzers.NamingRules
              *  2. This diagnostic appears targeted for "English" identifiers.
              *
              * See DotNetAnalyzers/StyleCopAnalyzers#369 for additional information:
-             * https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/369
+             * https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/369
              */
             if (!char.IsLower(identifier.ValueText[0]) && identifier.ValueText[0] != '_')
             {

@@ -25,7 +25,7 @@ namespace StyleCop.Analyzers.Test.DocumentationRules
         [InlineData("public event EventHandler TestMember { add { } remove { } }", 27)]
         public async Task TestRegressionMethodGlobalNamespaceAsync(string code, int column)
         {
-            // This test is a regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1416
+            // This test is a regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1416
             var testCode = $@"
 using System;
 

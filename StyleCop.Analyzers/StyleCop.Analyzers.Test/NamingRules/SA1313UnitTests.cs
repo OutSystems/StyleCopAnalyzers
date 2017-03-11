@@ -345,7 +345,7 @@ public class Test : Testbase
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1442:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1442
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1442
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         [Fact]
@@ -366,7 +366,7 @@ public class Test : Testbase
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1343:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1343
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1343
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         [Fact]
@@ -387,7 +387,7 @@ public class Test : Testbase
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1343:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1343
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1343
         /// </summary>
         /// <remarks>
         /// <para>This diagnostic does not check whether or not a parameter named <c>_</c> is being used.</para>
@@ -411,7 +411,7 @@ public class Test : Testbase
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1343:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1343
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1343
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         [Fact]
@@ -439,7 +439,7 @@ public class Test : Testbase
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1343:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1343
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1343
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         [Fact]
@@ -458,7 +458,7 @@ public class Test : Testbase
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1529:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1529
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1529
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -489,7 +489,7 @@ public interface IDerivedTest : ITest, IEmptyInterface
 
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1604:
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1604
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1604
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

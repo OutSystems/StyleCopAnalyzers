@@ -41,7 +41,7 @@ namespace StyleCop.Analyzers.ReadabilityRules
         private static readonly LocalizableString Title = new LocalizableResourceString(nameof(ReadabilityResources.SA1101Title), ReadabilityResources.ResourceManager, typeof(ReadabilityResources));
         private static readonly LocalizableString MessageFormat = new LocalizableResourceString(nameof(ReadabilityResources.SA1101MessageFormat), ReadabilityResources.ResourceManager, typeof(ReadabilityResources));
         private static readonly LocalizableString Description = new LocalizableResourceString(nameof(ReadabilityResources.SA1101Description), ReadabilityResources.ResourceManager, typeof(ReadabilityResources));
-        private static readonly string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1101.md";
+        private static readonly string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1101.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.ReadabilityRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);
@@ -186,8 +186,8 @@ namespace StyleCop.Analyzers.ReadabilityRules
                 }
 
                 // This is a workaround for:
-                // - https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1501
-                // - https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/2093
+                // - https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1501
+                // - https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/2093
                 // and can be removed when the underlying bug in roslyn is resolved
                 if (nameExpression.Parent is MemberAccessExpressionSyntax)
                 {

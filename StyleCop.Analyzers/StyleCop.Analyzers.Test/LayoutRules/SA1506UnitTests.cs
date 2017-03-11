@@ -577,7 +577,7 @@ public class TestClass
     public void TestMethod2() { }
 
     /// <summary>more documentation.</summary>
-    // another comment (a specific regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1456)
+    // another comment (a specific regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1456)
 
     public void TestMethod3() { }
 }
@@ -599,7 +599,7 @@ public class TestClass
     public void TestMethod2() { }
 
     /// <summary>more documentation.</summary>
-    // another comment (a specific regression test for https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1456)
+    // another comment (a specific regression test for https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1456)
     public void TestMethod3() { }
 }
 ";

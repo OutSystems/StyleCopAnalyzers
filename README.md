@@ -17,7 +17,7 @@ The severity of individual rules may be configured using [rule set files](https:
 in Visual Studio 2015. **Settings.StyleCop** is not supported, but a **stylecop.json** file may be used to customize the
 behavior of certain rules. See [Configuration.md](documentation/Configuration.md) for more information.
 
-For users upgrading from StyleCop Classic, see [KnownChanges.md](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/tree/master/documentation/KnownChanges.md)
+For users upgrading from StyleCop Classic, see [KnownChanges.md](https://github.com/brunocunhasilva/StyleCopAnalyzers/tree/master/documentation/KnownChanges.md)
 for information about known differences which you may notice when switching to StyleCop Analyzers.
 
 ## Installation

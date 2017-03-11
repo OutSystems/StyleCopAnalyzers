@@ -42,7 +42,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "While-do footer must not be preceded by blank line";
         private const string MessageFormat = "While-do footer must not be preceded by blank line";
         private const string Description = "The while footer at the bottom of a do-while statement is separated from the statement by a blank line.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1511.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1511.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

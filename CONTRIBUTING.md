@@ -1,8 +1,8 @@
 # Contributing
 
 If you want to contribute code you can get started by looking for issues marked as
-[up for grabs](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/labels/up%20for%20grabs).
-We also have the [easy](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/labels/easy) tag
+[up for grabs](https://github.com/brunocunhasilva/StyleCopAnalyzers/labels/up%20for%20grabs).
+We also have the [easy](https://github.com/brunocunhasilva/StyleCopAnalyzers/labels/easy) tag
 for issues suitable if you are unfamiliar with roslyn.
 
 You can also help by filing issues, participating in discussions and doing code review.

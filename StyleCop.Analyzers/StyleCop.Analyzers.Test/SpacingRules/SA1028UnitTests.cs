@@ -191,7 +191,7 @@ namespace StyleCop.Analyzers.Test.SpacingRules
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1373 "SA1028 does not appear to catch single
         /// space after final closing brace":
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1373
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1373
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]
@@ -219,7 +219,7 @@ namespace StyleCop.Analyzers.Test.SpacingRules
         /// <summary>
         /// This is a regression test for DotNetAnalyzers/StyleCopAnalyzers#1445 "SA1028 falsely reports when
         /// <c>[assembly: InternalsVisibleTo("...")]</c> is used at the end of file":
-        /// https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/1445
+        /// https://github.com/brunocunhasilva/StyleCopAnalyzers/issues/1445
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous unit test.</returns>
         [Fact]

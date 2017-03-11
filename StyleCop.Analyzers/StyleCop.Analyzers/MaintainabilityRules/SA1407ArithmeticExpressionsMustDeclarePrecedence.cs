@@ -49,7 +49,7 @@ namespace StyleCop.Analyzers.MaintainabilityRules
         private const string Title = "Arithmetic expressions must declare precedence";
         private const string MessageFormat = "Arithmetic expressions must declare precedence";
         private const string Description = "A C# statement contains a complex arithmetic expression which omits parenthesis around operators.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1407.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1407.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.MaintainabilityRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

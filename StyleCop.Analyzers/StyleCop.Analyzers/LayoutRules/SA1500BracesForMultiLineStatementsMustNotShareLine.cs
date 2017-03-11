@@ -63,7 +63,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Braces for multi-line statements must not share line";
         private const string MessageFormat = "Braces for multi-line statements must not share line";
         private const string Description = "The opening or closing brace within a C# statement, element, or expression is not placed on its own line.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1500.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1500.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

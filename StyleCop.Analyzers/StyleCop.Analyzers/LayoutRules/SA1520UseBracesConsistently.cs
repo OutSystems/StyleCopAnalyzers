@@ -45,7 +45,7 @@ namespace StyleCop.Analyzers.LayoutRules
         private const string Title = "Use braces consistently";
         private const string MessageFormat = "Use braces consistently";
         private const string Description = "The opening and closing braces of a chained if/else if/else construct were included for some clauses, but omitted for others.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1520.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1520.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.LayoutRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

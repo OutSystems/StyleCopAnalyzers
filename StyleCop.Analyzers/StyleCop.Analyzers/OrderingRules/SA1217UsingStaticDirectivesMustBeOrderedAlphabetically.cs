@@ -32,7 +32,7 @@ namespace StyleCop.Analyzers.OrderingRules
         private const string Title = "Using static directives must be ordered alphabetically";
         private const string MessageFormat = "The using static directive for '{0}' must appear after the using static directive for '{1}'";
         private const string Description = "All using static directives must be ordered alphabetically.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1217.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1217.md";
 
         private static readonly DiagnosticDescriptor Descriptor =
             new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, AnalyzerCategory.OrderingRules, DiagnosticSeverity.Warning, AnalyzerConstants.EnabledByDefault, Description, HelpLink);

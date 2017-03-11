@@ -65,7 +65,7 @@ namespace StyleCop.Analyzers.SpacingRules
         private const string MessageFormatNotFollowedByWhitespace = "Operator '{0}' must not be followed by whitespace.";
         private const string MessageFormatNotAtEndOfLine = "Operator '{0}' must not appear at the end of a line.";
         private const string Description = "The spacing around an operator symbol is incorrect, within a C# code file.";
-        private const string HelpLink = "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1003.md";
+        private const string HelpLink = "https://github.com/brunocunhasilva/StyleCopAnalyzers/blob/master/documentation/SA1003.md";
 
         private static readonly ImmutableArray<SyntaxKind> BinaryExpressionKinds =
             ImmutableArray.Create(
