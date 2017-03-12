@@ -248,20 +248,18 @@
         "excludedFiles": {
           "type": "array",
           "description": "The set of files that will be ignored by the Analysers (relative to the position of the stylecop.json settings file).",
-          "default": [],
           "items": {
-            "type": "string",
-            "uniqueItems": true
-          }
+            "type": "string"
+          },
+          "uniqueItems": true
         },
         "excludedFileFilters": {
           "type": "array",
           "description": "The set of filters that determine which files are ignored by the Analysers (filters are regular expressions verified agains the file names - e.g. '\\.generated\\.cs$')",
-          "default": [],
           "items": {
-            "type": "string",
-            "uniqueItems": true
-          }
+            "type": "string"
+          },
+          "uniqueItems": true
         }
       }
     }
