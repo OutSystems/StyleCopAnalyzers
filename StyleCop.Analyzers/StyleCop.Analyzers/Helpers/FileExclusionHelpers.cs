@@ -5,6 +5,7 @@ namespace StyleCop.Analyzers.Helpers
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.IO;
     using System.Linq;
     using System.Text;
@@ -51,13 +52,7 @@ namespace StyleCop.Analyzers.Helpers
 
         private static bool IsFileExcludedFromAnalysis(StyleCopSettings settings, string settingsFolder, Microsoft.CodeAnalysis.SyntaxTree tree)
         {
-            return (settings?.ExcludedFiles != null && settings.ExcludedFiles.Any(file => tree.FilePath.Equals(NormalizePath(Path.Combine(settingsFolder, file)), StringComparison.OrdinalIgnoreCase))) ||
-                (settings?.ExcludedFileFilters != null && settings.ExcludedFileFilters.Any(fileFilter => Regex.IsMatch(tree.FilePath, fileFilter, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture)));
-        }
-
-        private static string NormalizePath(string path)
-        {
-            return new Uri(path).LocalPath;
+            return (settings?.IsExcludedFile(tree.FilePath, settingsFolder)).GetValueOrDefault();
         }
     }
 }

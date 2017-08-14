@@ -3,12 +3,13 @@
 
 namespace StyleCop.Analyzers.Settings.ObjectModel
 {
-    using System.Collections.Generic;
-    using System.Collections.Immutable;
     using Newtonsoft.Json;
 
+    /// <summary>
+    /// This partial is main class for StyleCopSettings
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
-    internal class StyleCopSettings
+    internal partial class StyleCopSettings
     {
         /// <summary>
         /// This is the backing field for the <see cref="ExcludedFiles"/> property.

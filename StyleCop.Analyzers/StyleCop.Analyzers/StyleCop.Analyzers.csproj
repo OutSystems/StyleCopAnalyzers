@@ -290,6 +290,7 @@
     <Compile Include="Settings\ObjectModel\SettingsFile.cs" />
     <Compile Include="Settings\ObjectModel\SpacingSettings.cs" />
     <Compile Include="Settings\ObjectModel\StyleCopSettings.cs" />
+    <Compile Include="Settings\ObjectModel\StyleCopSettings.FileExclusion.cs" />
     <Compile Include="Settings\ObjectModel\TopLevelType.cs" />
     <Compile Include="Settings\ObjectModel\UsingDirectivesPlacement.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
